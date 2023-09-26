@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: The Data Science Process 
-email: bwegrowski@gmail.com 
+email: "bwegrowski@gmail.com" 
 description: "This blog exists to make posts about the data science process" 
 baseurl: "/386" # the name of the repository 
 url: "https://bwegr.github.io" #  change this to "https://<your-github-username>.github.io"
-image: https://source.unsplash.com/random
+image: "https://source.unsplash.com/random"
 author: Brandon Wegrowski
 copyright: BMW # Your initials or what you want the copyright to be.  Leave empty for no copyright
 footer_description: 'The default image for the site header is a random image from 
