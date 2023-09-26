@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome"
 author: Brandon Wegrowski
-description: Welcome Post to the 386 Blog - Data Science Process
+description: "Welcome Post to the 386 Blog - Data Science Process"
 image: "/assets/code.png"
 --- 
 
