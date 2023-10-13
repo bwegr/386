@@ -47,11 +47,46 @@ def check_guess(guess, random_word):
 
 ```
 
-
+We will now create our #3 - and final - function, which is our main function to execute the game, and actually uses the previous two functions within it. 
 
 
 ```python
-import random
+def main():
+  """Plays a game of Wordle."""
+
+  # Create a word list.
+  word_list = ["hello", "world", "test", "wordle"]
+
+  # Choose a random word.
+  random_word = choose_random_word(word_list)
+
+  # Start the game loop.
+  guesses = []
+  while len(guesses) < 6:
+    guess = input("Guess a word: ")
+
+    # Check the player's guess.
+    colors = check_guess(guess, random_word)
+
+    # Add the guess to the list of guesses.
+    guesses.append((guess, colors))
+
+    # Print the colors of the squares.
+    for color in colors:
+      print(color, end=" ")
+
+    print()
+
+    # If the player guessed the word correctly, end the game.
+    if guess == random_word:
+      break
+
+  # If the player runs out of guesses, end the game.
+  if len(guesses) == 6:
+    print("Game over! The word was " + random_word)
+
+if __name__ == "__main__":
+
 ```
 
 
