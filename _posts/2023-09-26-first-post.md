@@ -6,13 +6,13 @@ description: "Welcome Post to the 386 Blog - Data Science Process"
 image: "/assets/code.jpg"
 --- 
 
-Wordle has become a global phenomenon, with millions of people playing it every day. Much of it's enjoyment comes from its simplicity  - just guess a five letter word. If you're a programming enthusiast, this may make it a great target for duplicating and you might find even more enjoyment by creating a Wordle game with code. In this blog post, we'll walk you through the steps involved in creating a simple Wordle game in Python.
+Wordle has become a global phenomenon, with millions of people playing it every day. Much of its enjoyment comes from its simplicity  - just guess a five-letter word. If you're a programming enthusiast, this may make it a great target for duplicating and you might find even more enjoyment by creating a Wordle game with code. In this blog post, we'll walk you through the steps involved in creating a simple Wordle game in Python.
 
 *Disclaimer: This tutorial assumes a basic understanding of Python*
 
 To get started, pull up a blank .py file in your favorite IDE.
 
-This Wordle will be a very simple, bare-bones version, so feel free to add to it. We will only need to import the random package, but feel free to import other packages like string, Theme, and Console to spice up the output in the terminal and make it actually look more like the Wordle game
+This Wordle will be a very simple, bare-bones version, so feel free to add to it. We will only need to import the random package but feel free to import other packages like string, Theme, and Console to spice up the output in the terminal and make it actually look more like the Wordle game.
 
 ```python
 import random
@@ -29,7 +29,7 @@ def choose_random_word(word_list):
 
 ```
 
-Function #2 takes two inputs: a guess, and the random word (which is the correct answer the player is trying to guess). It check to see if that guess is correct and then returns a list of five colors corresponding to the correctness of each letter in that word. As those who have played Wordle know, green indicates the letter is correct and in the correct position, yellow indicates the letter is correct but in the wrong position, and gray indicates the letter is incorrect. Thus, receiving an output of "green, green, green, green, green" indicates that your guess was the correct word.
+Function #2 takes two inputs: a guess, and the random word (which is the correct answer the player is trying to guess). It checks to see if that guess is correct and then returns a list of five colors corresponding to the correctness of each letter in that word. As those who have played Wordle know, green indicates the letter is correct and in the correct position, yellow indicates the letter is correct but in the wrong position, and gray indicates the letter is incorrect. Thus, receiving an output of "green, green, green, green, green" indicates that your guess was the correct word.
 
 
 ```python
@@ -90,6 +90,9 @@ if __name__ == "__main__":
 ```
 
 Now run your code and enjoy playing Wordle, then have your friends try it and add more features to make it even better!
+
+![image](https://github.com/bwegr/386/assets/67449500/089f7725-acf8-4521-bed8-a3f2e44b8acb)
+
 
 
 
