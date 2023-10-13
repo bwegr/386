@@ -29,19 +29,11 @@ def choose_random_word(word_list):
 
 ```
 
-
-
+Function #2 takes two inputs: a guess, and the random word (which is the correct answer the player is trying to guess). It check to see if that guess is correct and then returns a list of five colors corresponding to the correctness of each letter in that word. As those who have played Wordle know, green indicates the letter is correct and in the correct position, yellow indicates the letter is correct but in the wrong position, and gray indicates the letter is incorrect. Thus, receiving an output of "green, green, green, green, green" indicates that your guess was the correct word.
 
 
 ```python
 def check_guess(guess, random_word):
-  # Checks the player's guess against the random word.
-  # Returns a list of colors, where each color represents the correctness of the corresponding letter in the guess.
-
-  # Green: The letter is correct and in the correct position.
-  # Yellow: The letter is correct but in the wrong position.
-  # Gray: The letter is incorrect.
-
   colors = []
   for i in range(len(guess)):
     if guess[i] == random_word[i]:
