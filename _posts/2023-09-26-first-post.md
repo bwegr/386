@@ -48,14 +48,14 @@ def check_guess(guess, random_word):
 ```
 
 We will now create our #3 - and final - function, which is our main function to execute the game, and actually uses the previous two functions within it. 
-
+In this function, we define the list of words manually, but feel free to import your own list of words (the official list of words has been leaked on the internet and is available publicly). The guess is checked for length, the colors are printed, and then the game is terminated after either a correct guess or 6 incorrect guesses, whichever comes first.
 
 ```python
 def main():
   """Plays a game of Wordle."""
 
   # Create a word list.
-  word_list = ["hello", "world", "test", "wordle"]
+  word_list = ["hello", "world", "test", "wordle", "filter", "found", "wrong", "right"]
 
   # Choose a random word.
   random_word = choose_random_word(word_list)
@@ -89,15 +89,7 @@ if __name__ == "__main__":
 
 ```
 
-
-
-
-```python
-import random
-```
-
-
-My favorite department at BYU is the <a href="https:statistics.byu.edu" target="_blank">Statistics Department</a>
+Now run your code and enjoy playing Wordle, then have your friends try it and add more features to make it even better!
 
 
 
