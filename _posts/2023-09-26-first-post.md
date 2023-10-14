@@ -10,7 +10,7 @@ Wordle has become a global phenomenon, with millions of people playing it every 
 
 *Disclaimer: This tutorial assumes a basic understanding of Python*
 
-#### Getting Started
+#### **Getting Started**
 
 To get started, pull up a blank .py file in your favorite IDE.
 
@@ -20,7 +20,7 @@ This Wordle will be a very simple, bare-bones version, so feel free to add to it
 import random
 ```
 
-#### Function 1
+#### **Function 1**
 The structure of our code takes the form of 3 functions. The first two functions will be used within the third function (the main function) which will simulate the Wordle experience for us.
 
 Function #1 has only one line of code that will randomly choose a word from whatever list of words is passed to it.
@@ -32,7 +32,7 @@ def choose_random_word(word_list):
 
 ```
 
-#### Function 2
+#### **Function 2**
 Function #2 takes two inputs: a guess, and the random word (which is the correct answer the player is trying to guess). It checks to see if that guess is correct and then returns a list of five colors corresponding to the correctness of each letter in that word. As those who have played Wordle know, green indicates the letter is correct and in the correct position, yellow indicates the letter is correct but in the wrong position, and gray indicates the letter is incorrect. Thus, receiving an output of "green, green, green, green, green" indicates that your guess was the correct word.
 
 
@@ -51,7 +51,7 @@ def check_guess(guess, random_word):
 
 ```
 
-#### Function 3
+#### **Function 3**
 We will now create our #3 - and final - function, which is our main function to execute the game, and actually uses the previous two functions within it. 
 In this function, we define the list of words manually, but feel free to import your own list of words (the official list of words has been leaked on the internet and is available publicly). The guess is checked for length, the colors are printed, and then the game is terminated after either a correct guess or 6 incorrect guesses, whichever comes first.
 
@@ -94,7 +94,7 @@ if __name__ == "__main__":
 
 ```
 
-#### Have Fun!
+#### **Have Fun!**
 Now run your code and enjoy playing Wordle, then have your friends try it and add more features to make it even better!
 
 ![image](https://github.com/bwegr/386/assets/67449500/089f7725-acf8-4521-bed8-a3f2e44b8acb)
