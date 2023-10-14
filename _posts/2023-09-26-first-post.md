@@ -14,7 +14,7 @@ Wordle has become a global phenomenon, with millions of people playing it every 
 
 To get started, pull up a blank .py file in your favorite IDE.
 
-This Wordle will be a very simple, bare-bones version, so feel free to add to it. We will only need to import the random package but feel free to import other packages like string, Theme, and Console to spice up the output in the terminal and make it actually look more like the Wordle game.
+This Wordle will be a very simple, bare-bones version, so feel free to add to it. We will only need to import the random package but feel free to import other packages like [string](https://docs.python.org/3/library/string.html), [rich.theme](https://rich.readthedocs.io/en/stable/reference/theme.html), and [rich.console](https://rich.readthedocs.io/en/stable/reference/console.html) to spice up the output in the terminal and make it actually look more like the Wordle game.
 
 ```python
 import random
